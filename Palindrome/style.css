@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: rgb(158,120,143);
+    background: linear-gradient(180deg, #7284A8 0%, #2FBF71 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title-container {
+    text-transform: uppercase;
+}
+
+.content-section{
+    background-color: #f0f4ef;
+    color: black;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-text {
+    margin: 0;
+    text-align: center;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+.text-box {
+    border: solid black 1px;
+    border-radius: 5px;
+    height: 32px;
+    width: 200px;
+}
+
+.text-box:focus-visible {
+    outline: solid #7284A8  1px;
+}
+
+.verify-button {
+    background-color: #2FBF71;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.verify-button:hover {
+    background-color: #7284A8;
+}
+
+.verify-button:focus-visible {
+    outline: none;
+}
+
+/*Changing the the result text color based on result*/
+.res-info-message {
+    color: grey;
+}
+
+.res-succes-message {
+    color: #2FBF71
+}
+
+.res-fail-message {
+    color: #9e788f;
+}
